@@ -1,7 +1,17 @@
 <p>home works!</p>
+<h1>Count Value : 
+  <span>{{ count() }}</span>
+</h1>
 <storybook-button
   [primary]="true"
   [backgroundColor]="null"
-  [label]="'Button'"
-  (onClick)="onClick($event)"
+  [label]="'Increament'"
+  (onClick)="increment()"
+></storybook-button>
+
+<storybook-button
+  [primary]="false"
+  [backgroundColor]="null"
+  [label]="'Decreamnet'"
+  (onClick)="decrement()"
 ></storybook-button>
