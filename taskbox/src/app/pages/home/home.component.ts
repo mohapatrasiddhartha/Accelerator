@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import ButtonComponent from 'src/stories/button.component';
 
 
@@ -12,6 +12,7 @@ import ButtonComponent from 'src/stories/button.component';
 export class HomeComponent {
 
   count = signal(0);
+  double = computed(() => this.count() * 2);
 
   // Traditional Angular change detection relies on zone.js and can be inefficient,
   // especially with complex component hierarchies.

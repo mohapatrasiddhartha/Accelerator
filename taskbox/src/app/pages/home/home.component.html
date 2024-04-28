@@ -1,7 +1,10 @@
 <p>home works!</p>
-<h1>Count Value : 
+<h1>Single Value : 
   <span>{{ count() }}</span>
 </h1>
+<!-- <h1>Double Value : 
+  <span>{{ double() }}</span>
+</h1> -->
 <storybook-button
   [primary]="true"
   [backgroundColor]="null"
@@ -13,5 +16,14 @@
   [primary]="false"
   [backgroundColor]="null"
   [label]="'Decreamnet'"
+  (onClick)="decrement()"
+></storybook-button>
+
+
+<h3>Products List</h3>
+<storybook-button
+  [primary]="true"
+  [backgroundColor]="null"
+  [label]="'Add Product'"
   (onClick)="decrement()"
 ></storybook-button>
