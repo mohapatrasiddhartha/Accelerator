@@ -1,0 +1,32 @@
+@if (chatForm.value.bot) {
+<div class="chat">
+    <div #messagesContainer class="messages">
+        @if (messagesHistory.length < 1) { <h2 class="welcome-message">Hello, How can I help today?</h2>
+            } @for ( message of messagesHistory; track message.role) { @if
+            (message.parts) {
+            <div [@typeWritterEffect] class="messages-content">
+                <span [class]="{
+              gemini: message.role === 'model',
+              user: message.role === 'user'
+            }">
+                    <i class="fa" [class]="{
+                'fa-commenting-o': message.role === 'model',
+                'fa-user-circle-o': message.role === 'user'
+              }" aria-hidden="true"></i>
+                    &nbsp;
+
+                    {{ message.role === "model" ? "AI" : "User" }}:&nbsp;</span>
+                <span class="text" [innerHTML]="message.parts | convertTextToHtml">
+                </span>
+            </div>
+            } }
+    </div>
+    <section class="prompt-input">
+        <textarea (keydown.enter)="sendMessage($event)" 
+        type="text" class="message-input" 
+        id="messageInput" 
+        [placeholder]="'Enter your prompt here'" rows="2">
+        </textarea>
+    </section>
+</div>
+}

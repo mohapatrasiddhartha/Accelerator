@@ -1,0 +1,16 @@
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+  
+.nav-item {
+    margin-right: 10px; /* Add spacing between navigation links */
+    .nav-link {
+        display: inline-block;
+        text-decoration: none;
+        color: #000;
+    }
+
+}

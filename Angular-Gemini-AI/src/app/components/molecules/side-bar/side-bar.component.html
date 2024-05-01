@@ -1,0 +1,17 @@
+<div class="sidebar" [class.closed]="isOpened">
+    <div class="sidebar-header">
+        <button (click)="toggleSidebar()" class="new-chat">
+            <!-- <img src="../../../../assets/icons/edit.svg" alt="New Chat" /> -->
+            New Chat
+        </button>
+        <button (click)="toggleSidebar()" class="menu-burger">
+            <img src="../../../../assets/icons/menu-burger.png" alt="Menu Burger" />
+        </button>
+    </div>
+    <ul class="sidebar-nav">
+      <!-- <li *ngFor="let item of menuItems">
+        <a routerLink="{{ item.link }}">{{ item.label }}</a>
+      </li> -->
+    </ul>
+</div>
+  

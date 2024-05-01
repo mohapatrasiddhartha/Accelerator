@@ -1,0 +1,15 @@
+.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 10; /* Ensure the header stays on top of other elements */
+}
+  
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

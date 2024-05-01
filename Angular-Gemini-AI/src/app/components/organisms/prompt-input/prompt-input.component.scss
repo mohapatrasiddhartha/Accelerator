@@ -1,0 +1,30 @@
+.prompt-input {
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    bottom: 40px;
+    left: 25%;
+
+    .message-input {
+        background-color: var(--bard-color-surface-container);
+        border-radius: 32px;
+        overflow: hidden;
+        padding: 4px 8px;
+        box-shadow: inset 0 0 0 1px transparent;
+        width: 100%;
+        color: #fff;
+        height: 75px;
+    }
+}
+
+
+
+
+.messages{
+    // position: fixed;
+    // top: 70px;
+    // left: 55px;
+    // color: #000;
+    // height: 65%;
+    // overflow: auto;
+}
